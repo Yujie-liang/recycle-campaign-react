@@ -13,7 +13,9 @@
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 60px; /*和父元素高一樣就可將自垂直置中*/
-        color: #4d7418;
+        color: #49b725;
+        display: flex;
+        align-items: center; /* 讓圖片和文本垂直居中 */
     }
 
     .navbarToggle {
@@ -44,7 +46,7 @@
     .hamburger::after {
         width: 30px;
         height: 3px;
-        background: #4d7418;
+        background: #49b725;
     }
 
     .hamburger {
@@ -77,10 +79,10 @@
     transform: scale(1, 0); /*若不用transition特效，可使用 display: none;*/
     
     .navLink {
-        color: #4d7418;
+        color: #49b725;
         padding-bottom: 3px;
         &.activeSection {
-            border-bottom: 2px solid #4d7418;
+            border-bottom: 2px solid #49b725;
         }
     }
     
@@ -93,7 +95,7 @@
 @media screen and (min-width: 768px) {
     .header {
         display: grid;
-        grid-template-columns: 1fr auto minmax(580px, 3fr) 1fr;
+        grid-template-columns: 1fr auto minmax(520px, 3fr) 1fr;
         .navbarBrand {
             grid-column: 2/3;
         }

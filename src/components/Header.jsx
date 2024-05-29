@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './Header.module.scss';
+import logo from '../assets/logo.png';
 
 function Nav(){
     const [activeSection, setActiveSection] = useState('');
@@ -43,7 +44,8 @@ function Nav(){
 export default function Header(){
     return (
         <header id="header" className={styles.header}>
-            <a href="#" className={styles.navbarBrand}>回收大作戰logo</a>
+            
+            <a href="#" className={styles.navbarBrand}><img src={logo} alt="logo" width="60"/>回收大作戰</a>
             <label htmlFor="navbar-toggle" className={styles.navbarToggleLabel}><span className={styles.hamburger}></span></label>
             <input type="checkbox" className={styles.navbarToggle} id="navbar-toggle"></input>
             <Nav />
