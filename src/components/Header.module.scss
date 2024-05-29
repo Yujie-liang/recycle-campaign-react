@@ -1,0 +1,123 @@
+.header {
+    position: fixed; /*固定置頂*/
+    z-index: 999; /*確保不被遮蓋*/
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    
+    .navbarBrand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 60px; /*和父元素高一樣就可將自垂直置中*/
+        color: #4d7418;
+    }
+
+    .navbarToggle {
+        visibility: hidden; /*加上position: absolute，從文字流中移除*/
+        position: absolute;
+
+        &:checked ~ .nav {
+            transform: scale(1, 1); /*若不用transition特效，可使用 display: block;*/
+        }
+
+        &:checked ~ .nav .navItem {
+            opacity: 1;
+            transition: opacity 0.2s ease-out 0.15s; /*delay 0.15s 打開後才呈現字*/
+        }
+    }
+
+    .navbarToggleLabel {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 7.5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        width: 30px;
+        height: 3px;
+        background: #4d7418;
+    }
+
+    .hamburger {
+        position: relative;
+
+        &::before,
+        &::after {
+            position: absolute;
+            left: 0;
+            content: "";
+        }
+
+        &::before {
+            bottom: 8px;
+        }
+
+        &::after {
+            top: 8px;
+        }
+    }
+}
+
+.nav {
+    position: absolute; /* 根據父元素header */
+    top: 100%; /*父元素結束的地方 */
+    width: 100%;
+    background-color: #fff;
+    transition: transform 0.2s ease-out;
+    transform-origin: top; /*變化的原點，預設是center*/
+    transform: scale(1, 0); /*若不用transition特效，可使用 display: none;*/
+    
+    .navLink {
+        color: #4d7418;
+        padding-bottom: 3px;
+        &.activeSection {
+            border-bottom: 2px solid #4d7418;
+        }
+    }
+    
+    .navItem {
+        margin: 1.4rem 0;
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(580px, 3fr) 1fr;
+        .navbarBrand {
+            grid-column: 2/3;
+        }
+        .navbarToggleLabel {
+            display: none;
+        }
+    }
+
+    .nav {
+        all: unset;
+        grid-column: 3/4;
+
+        .navItem {
+            margin: 0;
+            opacity: 1;
+        }
+
+        .navList {
+            height: 100%;
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-content: end;
+            grid-gap: 2rem;
+        }
+    }
+}
