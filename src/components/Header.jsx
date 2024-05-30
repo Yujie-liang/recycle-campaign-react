@@ -50,5 +50,6 @@ export default function Header(){
             <input type="checkbox" className={styles.navbarToggle} id="navbar-toggle"></input>
             <Nav />
         </header>
+        
     )
 }

@@ -1,20 +1,23 @@
+$main-color: #49b725;
+$dark-main-color: #217505;
 .action {
     color: white;
-    background: #39bae6;
+    background: $main-color;
     border-radius: 0.25rem;
     display: inline-block;
     font-size: 1rem;
     padding: 0.25rem 1rem;
     transition: all 0.1s linear;
+    z-index: 2;
 }
 .action:hover {
-    background: #267c99;
+    background: $main-color;
     /* 陰影 */
     -webkit-box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
     -moz-box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
     box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
 }
-.background-image {
+.backgroundImage {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

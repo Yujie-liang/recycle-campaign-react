@@ -1,0 +1,10 @@
+.bannerWrapper {
+    padding-top: 92px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 依排列所需欄為繪製，非依內容數 */
+    grid-template-rows: repeat(2, 250px);
+    grid-gap: 0.5rem;
+    grid-template-areas:
+      "main main main main"
+      "left left right right";
+  }

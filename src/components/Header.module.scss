@@ -1,3 +1,5 @@
+@import '../styles/main.scss';
+
 .header {
     position: fixed; /*固定置頂*/
     z-index: 999; /*確保不被遮蓋*/
@@ -13,7 +15,7 @@
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 60px; /*和父元素高一樣就可將自垂直置中*/
-        color: #49b725;
+        color: $main-color;
         display: flex;
         align-items: center; /* 讓圖片和文本垂直居中 */
     }
@@ -46,7 +48,7 @@
     .hamburger::after {
         width: 30px;
         height: 3px;
-        background: #49b725;
+        background: $main-color;
     }
 
     .hamburger {
@@ -79,10 +81,10 @@
     transform: scale(1, 0); /*若不用transition特效，可使用 display: none;*/
     
     .navLink {
-        color: #49b725;
+        color: $main-color;
         padding-bottom: 3px;
         &.activeSection {
-            border-bottom: 2px solid #49b725;
+            border-bottom: 2px solid $main-color;
         }
     }
     
