@@ -1,0 +1,17 @@
+@import '../styles/common/common';
+.recycleWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    width: 100%;
+}
+.recycleTitle{
+    font-size: 2rem;
+    color: $dark-main-color;
+    margin-bottom: 10px;
+    &::after{
+        content: ' 滑鼠移到圖片看看吧!';
+        font-size: 1.2rem;
+        color: black;
+    }
+}
