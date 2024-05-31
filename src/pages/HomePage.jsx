@@ -8,7 +8,6 @@ export default function HomePage(){
             <Header />
             <Campaign />
             <Recycle />
-            <section id="recycle"></section>
             <section id="more-info"></section>
         </>
     )

@@ -7,4 +7,13 @@
     grid-template-areas:
       "main main main main"
       "left left right right";
+}
+
+@media screen and (min-width: 768px) {
+  .bannerWrapper{
+    grid-template-areas: 
+    "main main left left"
+    "main main right right";
   }
+  
+}
