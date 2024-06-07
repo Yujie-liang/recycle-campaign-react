@@ -2,6 +2,7 @@ import Header from '../components/Header'
 import Campaign from '../components/Campaign';
 import Recycle from '../components/Recycle';
 import More from '../components/More';
+import Footer from '../components/Footer';
 export default function HomePage(){
     return(
         <>
@@ -9,6 +10,7 @@ export default function HomePage(){
             <Campaign />
             <Recycle />
             <More />
+            <Footer />
         </>
     )
 }
