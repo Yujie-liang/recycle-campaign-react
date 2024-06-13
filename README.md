@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/React-18.3.1-blue"/>
 </p>
 <p>
-A website for araising people's awareness in recycling and environment protection. The website integrates recycle campaigns from different brands to prommote the campaigns. The website also implements CSS transformation to increase interactions and to increase the interest of users to learn more about how to recycle correctly. React framework and Scss were the main technologies used in the frontend project.
+This website aims to raise people's awareness about recycling and environmental protection. It integrates recycling campaigns from different brands to promote these initiatives effectively. The website also utilizes CSS transformations to enhance user interactions and spark interest in learning proper recycling practices. The frontend of the project is built using the React framework and SCSS.
 </p>
 <p>Feel free to give it a try: <strong>https://yujie-liang.github.io/recycle-campaign-react/login</strong><br>
 </p>
@@ -19,11 +19,11 @@ A website for araising people's awareness in recycling and environment protectio
 
 ## :star2: Features
 
-- Users can check and link to the websites that have recycle campaigns<br>
-- Users can interact with the recycle items to check if they know how to recycle<br>
-- Users can change the recycle items to another 8 ones to learn more<br>
-- Users can see more about recycling in Taiwan by clicking the see more button<br>
-- Users can switch to different parts of the website through the navigator<br>
+- Users can check and link to websites that host recycling campaigns.<br>
+- Users can interact with recyclable items to test their knowledge of proper recycling methods.<br>
+- Users can swap recyclable items to learn about eight different items.<br>
+- Users can learn more about recycling in Taiwan by clicking the "See More" button.<br>
+- Users can navigate to different sections of the website through the navigator.<br>
 
 
 ## :diamond_shape_with_a_dot_inside: Installation
