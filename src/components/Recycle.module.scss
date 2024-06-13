@@ -17,16 +17,12 @@
         color: black;
     }
 }
-
+.container {
+    display: flex;
+    flex-direction: column;
+}
 .action{
-    margin-left: 85%;
+    margin-left: auto;
     font-size: 1.5rem;
     width: 120px;
-}
-
-@media screen and (min-width: 786px) {
-    .action{
-        margin-left: 90%;
-        
-    }
 }

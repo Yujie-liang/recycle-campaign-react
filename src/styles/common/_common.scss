@@ -1,16 +1,18 @@
 $main-color: #49b725;
 $dark-main-color: #217505;
+
 .action {
     color: white;
     background: $main-color;
     border-radius: 0.25rem;
-    display: inline-block;
+    // display: inline-block;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border: none;
     transition: all 0.1s linear;
     z-index: 2;
 }
+
 .action:hover {
     background: $main-color;
     /* 陰影 */
@@ -18,6 +20,7 @@ $dark-main-color: #217505;
     -moz-box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
     box-shadow: 0px 1px 5px 0px rgba(87, 87, 87, 1);
 }
+
 .backgroundImage {
     background-position: center;
     background-size: cover;
