@@ -8,7 +8,7 @@
 <p>
 This website aims to raise people's awareness about recycling and environmental protection. It integrates recycling campaigns from different brands to promote these initiatives effectively. The website also utilizes CSS transformations to enhance user interactions and spark interest in learning proper recycling practices. The frontend of the project is built using the React framework and SCSS.
 </p>
-<p>Feel free to give it a try: <strong>https://yujie-liang.github.io/recycle-campaign-react/login</strong><br>
+<p>Feel free to give it a try: <strong>https://yujie-liang.github.io/recycle-campaign-react/</strong><br>
 </p>
 </div>
 
@@ -53,7 +53,6 @@ Compiled successfully!
 You can now view recycle-campaign-react in the browser.
 
   Local:            http://localhost:3000
-  On Your Network:  http://192.168.50.172:3000
 
 ```
 
