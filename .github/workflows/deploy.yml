@@ -36,3 +36,5 @@ jobs:
           git config --global user.email "${{ env.user_email }}"
           git remote set-url origin "https://x-access-token:${{ env.GITHUB_TOKEN }}@github.com/${{ env.repository }}"
           npm run deploy
+      - name: Check environment variables
+        run: echo $MY_VARIABLE
