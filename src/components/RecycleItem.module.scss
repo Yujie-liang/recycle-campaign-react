@@ -35,38 +35,6 @@
     &:hover {
         opacity: 0.4;
     }
-
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        right: 1rem;
-        bottom: 1rem;
-        transition: transform 0.4s ease-out;
-        z-index: 1;
-    }
-
-    &::before {
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-        transform: scale(1, 1);
-    }
-    
-    &::after {
-        border-right: 1px solid #fff;
-        border-left: 1px solid #fff;
-        transform: scale(1, 1);
-    }
-    
-    &:hover::before {
-        transform: scale(1.05, 1);
-    }
-
-    &:hover::after {
-        transform: scale(1, 1.05);
-    }
 }
 
 .cardText {
